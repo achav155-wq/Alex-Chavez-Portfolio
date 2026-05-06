@@ -1,0 +1,15 @@
+/* CSS by Alex Chavez */
+/* Color Palette
+
+deep green= #192B33
+stem = #8FB259
+chlorophyll = #CCCC52
+sunflower = #FFD933
+pumpkin = #FF7F00
+
+*/
+
+/* GLOBAL (base) MOBILE FIRST */
+body {
+    background-color: #cccc52;
+}
