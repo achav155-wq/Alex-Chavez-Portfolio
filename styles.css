@@ -1,6 +1,7 @@
 /* CSS by Alex Chavez */
 /* Color Palette
 
+antiquewhite
 deep green= #192B33
 stem = #8FB259
 chlorophyll = #CCCC52
@@ -12,4 +13,98 @@ pumpkin = #FF7F00
 /* GLOBAL (base) MOBILE FIRST */
 body {
     background-color: #cccc52;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height:1.6;
+    justify-content: center;
+}
+
+/* NAV (flex) */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    background-color: #192b33;
+}
+
+nav li {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color:antiquewhite
+}
+
+/* MAIN (grid) */
+main {
+    background-color: #8fb259;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+main p:last-of-type {
+    background-color: #ffd933;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    color:#cccc52
+}
+
+h2 {
+    color:#192b33
+}
+
+strong {
+    color: #ff7f00;
+}
+
+.projects-container {
+    display: grid;
+    gap: 20px;
+}
+
+.projects-container {
+    background-color: #192b33;
+    padding: 20px;
+    border-radius: 10px;
+    color: antiquewhite
+}
+
+.projects-container h2 {
+    color:#ffd933;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff7f00;
+}
+
+header, footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #192b33;
+    color: antiquewhite
+}
+
+/* MEDIA QUERY (larger screens */
+@media (min-width: 1000px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
 }
